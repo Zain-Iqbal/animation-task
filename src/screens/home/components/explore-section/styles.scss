@@ -1,0 +1,23 @@
+.rethink-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  color: black;
+  position: relative;
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .inner-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
+
