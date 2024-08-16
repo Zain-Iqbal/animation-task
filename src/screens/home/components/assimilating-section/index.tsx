@@ -2,17 +2,16 @@ import React, {useRef} from 'react';
 
 import './styles.scss';
 
-const AgencySection = () => {
-
-    return <div  className={'agency-section'}>
-
-        <div className={'inner-box1'}>
-            <h1>We are not another 360 agency</h1>
+const AssimilatingSection = () => {
+    return <div  className={'assimilating-section'}>
+        <div className={'inner-box'}>
+            <h4>Because</h4>
+            <h1>Assimilating</h1>
         </div>
-        <div  className="line-container0">
-            <div className="animated-line0"></div>
+        <div  className="line-container5">
+            <div className="animated-line5"></div>
         </div>
     </div>
 }
 
-export default AgencySection
+export default AssimilatingSection

@@ -1,4 +1,4 @@
-.line-section2 {
+.rethink-section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,75 +7,44 @@
   background-color: white;
   color: black;
   position: relative;
+  border-bottom: 1px solid #dcdcdc;
 
   h1 {
     font-size: 38px;
+    vertical-align: center;
   }
 
-  .inner-box1 {
+  .val-al{
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+  }
+
+  .inner-box {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .line-container {
-    width: 270px;
-    height: 2px;
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .animated-line {
-    width: 0;
-    height: 2px;
-    background-color: black;
-    animation: lineAnimation 2s ease-in-out forwards;
-    animation-timeline: scroll();
-    animation-range-start: 48%;
-    animation-range-end: 54%;
-  }
-
-  @keyframes lineAnimation {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 100%;
-    }
-  }
-
-
-  .line-container3 {
-    width: 5px;
-    height: 50vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    rotate: 20deg;
-    position: absolute;
-    top: -10px;
-    left: 45.4vw
-  }
-
-  .animated-line3 {
+  #cursor {
+    background-color: rgb(15 23 42);
+    font-size: 40px;
+    animation: blink 1s infinite;
+    margin-left: 15px;
+    font-weight: 400 !important;
     width: 2px;
-    height: 0;
-    background-color: black;
-    animation: lineAnimation3 2s ease-in-out forwards;
-    animation-timeline: scroll();
-    animation-range-start: 45%;
-    animation-range-end: 50%;
+    height: 35px;
+    margin-bottom: 10px;
   }
 
-  @keyframes lineAnimation3 {
-    from {
-      height: 0%;
+  @keyframes blink {
+    0%, 100% {
+      background-color: transparent;
     }
-    to {
-      height: 100%;
+    50% {
+      background-color: rgb(15 23 42);
     }
   }
-
 }
 
 

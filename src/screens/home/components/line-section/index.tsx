@@ -1,39 +1,49 @@
-import {useRef} from 'react';
-import gsap from 'gsap';
-import {useGSAP} from '@gsap/react';
+import React, {useRef} from 'react';
+import {useGSAP} from "@gsap/react";
+import gsap from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
 
 import './styles.scss';
 
-const HeaderSection = () => {
+gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger);
+
+const LineSection = () => {
     const container = useRef(null);
 
     useGSAP(
         () => {
-                const timeLine = gsap.timeline({
-                scrollTrigger:{
-                    trigger:'.header-section',
-                    start: 'top 30%',
-                    markers:true,
-                    end:'bottom 20%',
-                    scrub:5,
-                },
+            const timeLine = gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.line-container0',
+                    start: 'top 10%',
+                    end: 'bottom 60%',
+                    scrub: 5,
+                }
             })
-            timeLine.from('.header-section p span', {
-                y:50,
+            timeLine.from('.inner-box1 h1', {
+                x: 100,
                 delay: 0.5,
-                opacity:0,
-                scale:0.5,
-                stagger:0.3,
+                opacity:0.7
             });
         },
         {scope: container}
     );
 
-    return <div ref={container} className={'header-section'}>
-     <p>{("What is Creo?").split('').map(item => {
-         return <span>{item}</span>
-     }) }</p>
+    return <div ref={container} className={'line-section'}>
+        <div className="line-container0">
+            <div className="animated-line0"></div>
+        </div>
+        <div className={'inner-box1'}>
+            <h1>But rather a mindset</h1>
+            <div className="line-container">
+                <div className="animated-line"></div>
+            </div>
+        </div>
+        <div className="line-container2">
+            <div className="animated-line2"></div>
+        </div>
     </div>
 }
 
-export default HeaderSection
+export default LineSection

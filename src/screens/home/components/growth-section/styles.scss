@@ -1,13 +1,15 @@
-.assimilating-section {
+.growth-section {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   height: 100vh;
   width: 100vw;
   background-color: white;
   color: black;
   position: relative;
-  h1{
+  border-bottom: 1px solid #dcdcdc;
+
+  h1 {
     font-size: 38px;
   }
 
@@ -15,7 +17,44 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 20px;
+    margin-top: 15vh;
+    row-gap: 10vh;
+
+    .vertical-text {
+      rotate: 90deg;
+      font-size: 50px;
+      font-weight: bold;
+    }
+  }
+
+
+  .line-container6 {
+    width: 5vw;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: absolute;
+    top: 0px;
+  }
+
+  .animated-line6 {
+    width: 5vw;
+    height: 0;
+    background-color: black;
+    animation: lineAnimation6 2s ease-in-out forwards;
+    animation-timeline: scroll();
+    animation-range-start: 80%;
+    animation-range-end: 95%;
+  }
+
+  @keyframes lineAnimation6 {
+    from {
+      height: 0%;
+    }
+    to {
+      height: 100%;
+    }
   }
 
 
@@ -35,8 +74,8 @@
     background-color: black;
     animation: lineAnimation5 2s ease-in-out forwards;
     animation-timeline: scroll();
-    animation-range-start: 70%;
-    animation-range-end: 80%;
+    animation-range-start: 80%;
+    animation-range-end: 90%;
   }
 
   @keyframes lineAnimation5 {

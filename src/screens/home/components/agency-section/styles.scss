@@ -1,4 +1,4 @@
-.line-section {
+.agency-section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,12 +20,12 @@
 
   .line-container0 {
     width: 2px;
-    height: 300px;
+    height: 45vh;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     position: absolute;
-    top: 0px;
+    bottom: 0px;
   }
 
   .animated-line0 {
@@ -34,68 +34,11 @@
     background-color: black;
     animation: lineAnimation0 2s ease-in-out forwards;
     animation-timeline: scroll();
-    animation-range-start: 30%;
-    animation-range-end: 45%;
+    animation-range-start: 18%;
+    animation-range-end: 27%;
   }
 
   @keyframes lineAnimation0 {
-    from {
-      height: 0%;
-    }
-    to {
-      height: 100%;
-    }
-  }
-
-  .line-container {
-    width: 270px;
-    height: 2px;
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .animated-line {
-    width: 0;
-    height: 2px;
-    background-color: black;
-    animation: lineAnimation 2s ease-in-out forwards;
-    animation-timeline: scroll();
-    animation-range-start: 30%;
-    animation-range-end: 45%;
-  }
-
-  @keyframes lineAnimation {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 100%;
-    }
-  }
-
-
-  .line-container2 {
-    width: 5px;
-    height: 416px;
-    display: flex;
-    align-items: flex-start;
-    position: absolute;
-    bottom: -42px;
-    rotate: 20deg;
-    left: 54vw;
-  }
-
-  .animated-line2 {
-    width: 2px;
-    height: 0;
-    background-color: black;
-    animation: lineAnimation2 2s ease-in-out forwards;
-    animation-timeline: scroll();
-    animation-range-start: 38%;
-    animation-range-end: 60%;
-  }
-
-  @keyframes lineAnimation2 {
     from {
       height: 0%;
     }
