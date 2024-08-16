@@ -33,8 +33,8 @@ const ExploreSection = () => {
 
     return <div ref={container} className={'explore-section'}>
         <div className={'inner-box'}>
-            <h1>{("Rethinking require CREO").split('').map(item => {
-                return <span>{item}</span>
+            <h1>{("Rethinking require CREO").split('').map((item, index) => {
+                return <span key={`hed-$val${index}`}>{item}</span>
             })}</h1>
             <div className={'explore-button'}>Explore <i className="fa-solid fa-list"/></div>
         </div>

@@ -31,8 +31,8 @@ const HeaderSection = () => {
     );
 
     return <div ref={container} className={'header-section'}>
-     <p>{("What is Creo?").split('').map(item => {
-         return <span>{item}</span>
+     <p>{("What is Creo?").split('').map((item, index) => {
+         return <span key={`hed-$val${index}`}>{item}</span>
      }) }</p>
     </div>
 }
