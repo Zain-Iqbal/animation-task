@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/animation-task/static/css/main.d37f2db5.css",
+    "main.js": "/animation-task/static/js/main.35a3929a.js",
+    "static/media/HelveticaNeueLTStd-Bd.ttf": "/animation-task/static/media/HelveticaNeueLTStd-Bd.614f64c80b243d313846.ttf",
+    "index.html": "/animation-task/index.html",
+    "main.d37f2db5.css.map": "/animation-task/static/css/main.d37f2db5.css.map",
+    "main.35a3929a.js.map": "/animation-task/static/js/main.35a3929a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d37f2db5.css",
+    "static/js/main.35a3929a.js"
+  ]
+}
